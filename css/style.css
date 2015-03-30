@@ -46,7 +46,7 @@ b {
   font-weight:        700;
 }
 section {
-  padding:            6rem 0;
+  padding:            2rem 0;
   align-items:        center;
   justify-content:    center;
 }
@@ -83,6 +83,9 @@ button::-moz-focus-inner {
   padding:            0 0.5rem;
   vertical-align:     middle;
 }
+#cause {
+  padding:            6rem 0;
+}
 #testimonials > li {
   color:              #444;
   font-size:          1.5rem;
@@ -90,8 +93,43 @@ button::-moz-focus-inner {
   font-weight:        300;
   list-style:         none;
 }
+#tryout {
+  font-size:          2rem;
+  padding-bottom:     2rem;
+}
+#tryout a {
+  color:              #C00;
+}
+#promise {
+  padding-bottom:     0;
+}
+#channels .list {
+  display:            inline-block;
+  color:              #666;
+  width:              20%;
+  height:             8rem;
+  margin:             1rem;
+  font-size:          1.5rem;
+  line-height:        8rem;
+  border:             1px solid #aaa;
+  -webkit-transition: all 300ms ease;
+  transition:         all 300ms ease;
+}
+#community {
+  width:              100%;
+  height:             6rem;
+  color:              #eee;
+  background:         #222;
+  padding-top:        2rem;
+}
 
 /* 2. Pseudoclass */
+#channels .list:hover {
+  cursor:             pointer;
+  font-size:          2rem;
+  background:         #eee;
+  border-color:       #666;
+}
 
 /* 2. Media Queries */
 @media screen and (max-width: 960px) {
