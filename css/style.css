@@ -19,7 +19,6 @@
 html, body {
   color:              #444;
   width:              100%;
-  height:             100%;
   margin:             0;
   padding:            0;
   display:            flexbox;
@@ -73,13 +72,15 @@ button::-moz-focus-inner {
 }
 
 /* 1. ID & Class */
+.fade {
+  -webkit-transition: all 300ms ease;
+  transition:         all 300ms ease;
+}
 .portal {
   margin:             auto 0.5rem;
   padding:            0.5rem 1rem;
   border-radius:      4px;
   vertical-align:     middle;
-  -webkit-transition: all 300ms ease;
-  transition:         all 300ms ease;
 }
 #pitch h1 { padding: 4rem 0; }
 #testimonials > li {
@@ -136,8 +137,6 @@ button::-moz-focus-inner {
   font-size:          1.5rem;
   line-height:        8rem;
   border:             1px solid #aaa;
-  -webkit-transition: all 300ms ease;
-  transition:         all 300ms ease;
 }
 #community {
   width:              100%;
@@ -155,6 +154,12 @@ nav .portal:hover,
 nav .portal:active {
   color:              #fff;
   background:         #27ae60;
+}
+#demo:hover, #demo:active {
+  box-shadow:         inset 0 0 1px 1px #fff;
+}
+#download:hover, #download:active {
+  box-shadow:         inset 0 0 0 1px #fff, inset 0 0 1px 1px #c0392b;
 }
 #channels .list:hover {
   cursor:             pointer;
