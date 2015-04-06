@@ -71,6 +71,7 @@
         function Plugin(element, options) {
                 this.element = element;
                 this.$el = $(element);
+                defaults.row_height = this.$el.find('li:first').height();
                 this.options = $.extend({}, defaults, options);
                 this._defaults = defaults;
                 this._name = pluginName;
@@ -178,10 +179,15 @@
                         if (!this.moving) {
                                 this.moving = 1;
                                 this.options.movingDown();
-                                this.$el.children('li:last').detach().prependTo(this.$el).css('marginTop', '-' + this.options.row_height + 'px')
-                                        .animate({marginTop: '0px'}, this.options.speed, function(){
-                                                this.moving = 0;
-                                                this.options.hasMoved();
+                                var element = this.$el.children('li:last');
+                                this.$el.animate({ height: element.height() });
+                                element.detach().prependTo(this.$el)
+                                        .css('marginTop', '-' + element.height() + 'px')
+                                        .animate({
+                                            marginTop: '0px'
+                                        }, this.options.speed, function(){
+                                            this.moving = 0;
+                                            this.options.hasMoved();
                                         }.bind(this));
                         }
                 },
@@ -191,7 +197,8 @@
                                 this.moving = 1;
                                 this.options.movingUp();
                                 var element = this.$el.children('li:first');
-                                element.animate({marginTop: '-' + this.options.row_height + 'px'}, this.options.speed,
+                                this.$el.animate({ height: element.next().height() });
+                                element.animate({marginTop: '-' + element.height() + 'px'}, this.options.speed,
                                         function(){
                                                 element.detach().css('marginTop', '0').appendTo(this.$el);
                                                 this.moving = 0;
