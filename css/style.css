@@ -155,11 +155,17 @@ nav .portal:active {
   color:              #fff;
   background:         #27ae60;
 }
-#demo:hover, #demo:active {
+#demo:hover {
   box-shadow:         inset 0 0 1px 1px #fff;
 }
-#download:hover, #download:active {
+#demo:active {
+  box-shadow:         inset 0 0 3px 1px #fff;
+}
+#download:hover {
   box-shadow:         inset 0 0 0 1px #fff, inset 0 0 1px 1px #c0392b;
+}
+#download:active {
+  box-shadow:         inset 0 0 0 1px #fff, inset 0 0 3px 1px #c0392b;
 }
 #channels .list:hover {
   cursor:             pointer;

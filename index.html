@@ -18,6 +18,7 @@
     <link rel="stylesheet"    href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet"    href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic|Open+Sans+Condensed:300,300italic,700" />
     <link rel="stylesheet"    href="css/style.css" />
+    <link rel="stylesheet"    href="css/animtype.css" />
 
     <!-- Polyfil for IE -->
     <!--[if lt IE 9]>
@@ -37,7 +38,14 @@
     </nav>
     <section id="pitch">
       <h1>&lt; Gluster Logo &gt;</h1>
-      <h2>Unified, Scale-out</h2>
+      <h2 class="animtype letters type">
+        <span class="animtype-words waiting">
+          <b class="is-visible">Distributed</b>
+          <b>Poly-protocol</b>
+          <b>Scale-out</b>
+          <b>Unified</b>
+        </span>
+      </h2>
       <h4><b>open source</b> storage platform, serving petabytes of data</h4>
       <div id="tryout">
         <a id="demo" class="fade" href="/tryserver">
@@ -88,6 +96,7 @@
     <script src="js/vendor/jquery.mousewheel.js"></script>
     <script src="js/vendor/jquery.smooth-scroll.js"></script>
     <script src="js/vendor/jquery.newsTicker.js"></script>
+    <script src="js/animtype.js"></script>
     <script>
       $("#anchors").find("a").smoothScroll();
       $("#testimonials").newsTicker({
