@@ -3,6 +3,7 @@
   position: relative;
 }
 .animtype-words b {
+  font-weight: normal;
   display: inline-block;
   position: absolute;
   white-space: nowrap;
@@ -50,6 +51,7 @@
 .animtype.type i {
   position: absolute;
   visibility: hidden;
+  font-style: normal;
 }
 .animtype.type i.in {
   position: relative;
