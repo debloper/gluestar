@@ -108,8 +108,9 @@ button::-moz-focus-inner {
 }
 #tryout a {
   width:              33%;
+  min-width:          20rem;
   margin:             auto 1rem;
-  padding:            1rem;
+  padding:            1rem 0;
   border-radius:      4px;
   display:            inline-block;
 }
@@ -122,7 +123,7 @@ button::-moz-focus-inner {
   color:              #c0392b;
   border:             1px solid #c0392b;
 }
-#soapbox {
+/*#soapbox {
   height:             0;
   position:           relative;
   padding-top:        30px;
@@ -136,10 +137,7 @@ button::-moz-focus-inner {
   width:              80%;
   height:             80%;
   position:           absolute;
-}
-#promise {
-  padding-bottom:     0;
-}
+}*/
 #channels {
   display:            flexbox;
   display:            flex;
@@ -159,12 +157,18 @@ a.social {
   margin:             auto 0.25rem;
   font-size:          2rem;
 }
+a.social svg {
+  width:              2rem;
+  height:             2rem;
+}
 a.comms {
   color:              #222;
   margin:             0.25rem auto;
   display:            block;
 }
-a.comms i.fa {
+a.comms svg {
+  width:              1rem;
+  height:             1rem;
   margin-right:       0.5rem;
 }
 
@@ -194,6 +198,7 @@ nav .portal:active {
   padding-top:        2.5rem;
 }
 a.social:hover, a.comms:hover {
+  fill:               #c00;
   color:              #c00;
 }
 
@@ -206,11 +211,11 @@ a.social:hover, a.comms:hover {
     margin:             1rem auto;
     display:            block;
   }
-  #soapbox iframe {
+  /*#soapbox iframe {
     left:               0;
     width:              100%;
     height:             100%;
-  }
+  }*/
   #channels .list { flex: 1 1 50%; }
   footer > div {
     flex:               1 1 50%;

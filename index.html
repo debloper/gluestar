@@ -15,7 +15,6 @@
     <link rel="icon"          href="img/logo-16.png" sizes="16x16" type="image/png" />
     <link rel="icon"          href="img/logo-32.png" sizes="32x32" type="image/png" />
 
-    <link rel="stylesheet"    href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet"    href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic|Open+Sans+Condensed:300,300italic,700" />
     <link rel="stylesheet"    href="css/style.css" />
     <link rel="stylesheet"    href="css/animtype.css" />
@@ -56,9 +55,9 @@
       </div>
     </section>
     <section id="promo">
-      <div id="soapbox">
+      <!--div id="soapbox">
         <iframe src="https://www.youtube.com/embed/eBTac68lqfI" frameborder="0"></iframe>
-      </div>
+      </div-->
       <ul id="testimonials">
         <li>We use Gluster because we're cool. &mdash; Coolness, Inc.</li>
         <li>Just tried out Gluster... awesomesauce! &mdash; The Next Geek</li>
@@ -67,12 +66,6 @@
       </ul>
     </section>
     <section id="outreach">
-      <div id="events">
-        <h2>Gluster Events All Over The Globe</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50398141.27206834!2d78.43774890766046!3d39.55829011436701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1427699921261" width="100%" height="400" frameborder="0" style="border:0"></iframe>
-      </div>
-    </section>
-    <section id="promise">
       <h2>Be part of a global community</h2>
       <div id="channels">
         <a href="#" class="list fade">
@@ -90,43 +83,76 @@
       <div>
         <h6>Social Media</h6>
         <a class="social fade" href="http://twitter.com/gluster" target="_blank">
-          <i class="fa fa-twitter"></i>
+          <svg><use xlink:href="#icon-twitter"></use></svg>
         </a>
-        <a class="social fade" href="https://www.facebook.com/GlusterInc" target="_blank">
-          <i class="fa fa-facebook-square"></i>
+        <a class="social fade" href="http://www.facebook.com/GlusterInc" target="_blank">
+          <svg><use xlink:href="#icon-facebook"></use></svg>
         </a>
-        <a class="social fade" href="https://plus.google.com/communities/110022816028412595292" target="_blank">
-          <i class="fa fa-google-plus-square"></i>
+        <a class="social fade" href="http://plus.google.com/communities/110022816028412595292" target="_blank">
+          <svg><use xlink:href="#icon-gplus"></use></svg>
         </a>
-        <a class="social" href="https://www.youtube.com/channel/UC4ejlxKWYIDWKXwLXqRf2Bw" target="_blank">
-          <i class="fa fa-youtube-play"></i>
+        <a class="social fade" href="http://www.youtube.com/channel/UC4ejlxKWYIDWKXwLXqRf2Bw" target="_blank">
+          <svg style=""><use xlink:href="#icon-youtube"></use></svg>
         </a>
       </div>
       <div>
         <h6>Communications</h6>
         <a class="comms fade" href="irc://irc.freenode.net/#gluster" target="_blank">
-          <i class="fa fa-terminal"></i> IRC on Freenode
+          <svg><use xlink:href="#icon-irc"></use></svg> IRC on Freenode
         </a>
         <a class="comms fade" href="http://www.gluster.org/mailman/listinfo/gluster-users" target="_blank">
-          <i class="fa fa-comments"></i> Users' Mailing List
+          <svg><use xlink:href="#icon-mail"></use></svg> Users' Mailing List
         </a>
         <a class="comms fade" href="http://www.gluster.org/mailman/listinfo/gluster-devel" target="_blank">
-          <i class="fa fa-comments"></i> Developer Mailing List
+          <svg><use xlink:href="#icon-mail"></use></svg> Developer Mailing List
         </a>
       </div>
       <div>
-        <p><b>Gluster</b> is an open source distributed storage project, openly governed by community, backed by Red hat.</p>
+        <p><b>Gluster</b> is an open source distributed storage project, openly governed by community.</p>
         <p>© 2013–2015 Red Hat, Inc.</p>
       </div>
     </footer>
 
+    <svg  display="none" width="0" height="0" version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-mail" viewBox="0 0 1024 1024">
+        <title>email</title>
+        <path class="path1" d="M1024 405.714v453.714q0 37.714-26.857 64.571t-64.571 26.857h-841.143q-37.714 0-64.571-26.857t-26.857-64.571v-453.714q25.143 28 57.714 49.714 206.857 140.571 284 197.143 32.571 24 52.857 37.429t54 27.429 62.857 14h1.143q29.143 0 62.857-14t54-27.429 52.857-37.429q97.143-70.286 284.571-197.143 32.571-22.286 57.143-49.714zM1024 237.714q0 45.143-28 86.286t-69.714 70.286q-214.857 149.143-267.429 185.714-5.714 4-24.286 17.429t-30.857 21.714-29.714 18.571-32.857 15.429-28.571 5.143h-1.143q-13.143 0-28.571-5.143t-32.857-15.429-29.714-18.571-30.857-21.714-24.286-17.429q-52-36.571-149.714-104.286t-117.143-81.429q-35.429-24-66.857-66t-31.429-78q0-44.571 23.714-74.286t67.714-29.714h841.143q37.143 0 64.286 26.857t27.143 64.571z"></path>
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 1024 1024">
+        <title>facebook</title>
+        <path class="path1" d="M853.35 0h-682.702c-94.25 0-170.648 76.42-170.648 170.686v682.63c0 94.266 76.398 170.684 170.648 170.684h341.352v-448h-128v-128h128v-96c0-88.366 71.634-160 160-160h160v128h-160c-17.674 0-32 14.328-32 32v96h176l-32 128h-144v448h213.35c94.25 0 170.65-76.418 170.65-170.684v-682.63c0-94.266-76.4-170.686-170.65-170.686z"></path>
+      </symbol>
+      <symbol id="icon-gplus" viewBox="0 0 1024 1024">
+        <title>gplus</title>
+        <path class="path1" d="M0.806 869.664c-0.244-2.532-0.452-5.070-0.584-7.63 0.13 2.56 0.34 5.098 0.584 7.63zM235.908 565.148c92.010 2.738 153.734-92.698 137.862-213.198-15.894-120.48-103.396-217.168-195.408-219.922-92.026-2.73-153.74 89.482-137.852 210 15.882 120.468 103.352 220.374 195.398 223.12zM1024 256v-85.31c0-93.88-76.782-170.69-170.658-170.69h-682.656c-92.276 0-168.012 74.232-170.564 165.926 58.362-51.386 139.324-94.316 222.874-94.316 89.304 0 357.244 0 357.244 0l-79.948 67.618h-113.268c75.13 28.804 115.156 116.124 115.156 205.722 0 75.248-41.81 139.954-100.888 185.968-57.644 44.902-68.572 63.708-68.572 101.878 0 32.578 61.746 88 94.032 110.788 94.382 66.538 124.916 128.312 124.916 231.456 0 16.428-2.042 32.83-6.066 48.96h307.742c93.874 0 170.656-76.75 170.656-170.69v-533.308h-192v191.998h-64v-192h-191.998v-64h191.998v-192h64v192h192zM185.886 765.936c21.614 0 41.422-0.59 61.936-0.59-27.146-26.334-48.626-58.6-48.626-98.38 0-23.608 7.564-46.336 18.134-66.52-10.782 0.77-21.79 0.994-33.126 0.994-74.356 0-137.506-24.076-184.204-63.854v67.242l0.006 201.73c53.44-25.374 116.888-40.622 185.88-40.622zM3.42 887.258c-1.112-5.458-1.966-11.006-2.542-16.634 0.574 5.628 1.43 11.176 2.542 16.634zM455.45 952.846c-15.058-58.806-68.454-87.964-142.888-139.568-27.072-8.732-56.894-13.874-88.894-14.208-89.618-0.964-173.108 34.942-220.216 88.372 15.92 77.706 85.034 136.558 167.234 136.558h286.444c1.816-11.128 2.696-22.632 2.696-34.432 0-12.534-1.534-24.792-4.376-36.722z"></path>
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 1024 1024">
+        <title>facebook</title>
+        <path class="path1" d="M853.35 0h-682.702c-94.25 0-170.648 76.42-170.648 170.686v682.63c0 94.266 76.398 170.684 170.648 170.684h341.352v-448h-128v-128h128v-96c0-88.366 71.634-160 160-160h160v128h-160c-17.674 0-32 14.328-32 32v96h176l-32 128h-144v448h213.35c94.25 0 170.65-76.418 170.65-170.684v-682.63c0-94.266-76.4-170.686-170.65-170.686z"></path>
+      </symbol>
+      <symbol id="icon-irc" viewBox="0 0 951 1024">
+        <title>irc</title>
+        <path class="path1" d="M334.286 561.714l-266.286 266.286q-5.714 5.714-13.143 5.714t-13.143-5.714l-28.571-28.571q-5.714-5.714-5.714-13.143t5.714-13.143l224.571-224.571-224.571-224.571q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714 13.143-5.714t13.143 5.714l266.286 266.286q5.714 5.714 5.714 13.143t-5.714 13.143zM950.857 822.857v36.571q0 8-5.143 13.143t-13.143 5.143h-548.571q-8 0-13.143-5.143t-5.143-13.143v-36.571q0-8 5.143-13.143t13.143-5.143h548.571q8 0 13.143 5.143t5.143 13.143z"></path>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 1024 1024">
+        <title>twitter</title>
+        <path class="path1" d="M1024 194.418c-37.676 16.708-78.164 28.002-120.66 33.080 43.372-26 76.686-67.17 92.372-116.23-40.596 24.078-85.556 41.56-133.41 50.98-38.32-40.83-92.922-66.34-153.346-66.34-116.022 0-210.088 94.058-210.088 210.078 0 16.466 1.858 32.5 5.44 47.878-174.6-8.764-329.402-92.4-433.018-219.506-18.084 31.028-28.446 67.116-28.446 105.618 0 72.888 37.088 137.192 93.46 174.866-34.438-1.092-66.832-10.542-95.154-26.278-0.020 0.876-0.020 1.756-0.020 2.642 0 101.788 72.418 186.696 168.522 206-17.626 4.8-36.188 7.372-55.348 7.372-13.538 0-26.698-1.32-39.528-3.772 26.736 83.46 104.32 144.206 196.252 145.896-71.9 56.35-162.486 89.934-260.916 89.934-16.958 0-33.68-0.994-50.116-2.94 92.972 59.61 203.402 94.394 322.042 94.394 386.422 0 597.736-320.124 597.736-597.744 0-9.108-0.206-18.168-0.61-27.18 41.056-29.62 76.672-66.62 104.836-108.748z"></path>
+      </symbol>
+      <symbol id="icon-youtube" viewBox="0 0 1024 1024">
+        <title>youtube</title>
+        <path class="path1" d="M832 128h-640c-105.6 0-192 86.4-192 192v384c0 105.6 86.4 192 192 192h640c105.6 0 192-86.4 192-192v-384c0-105.6-86.4-192-192-192zM384 768v-512l320 256-320 256z"></path>
+      </symbol>
+    </defs>
+    </svg>
+
+
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/jquery.mousewheel.js"></script>
-    <script src="js/vendor/jquery.smooth-scroll.js"></script>
     <script src="js/vendor/jquery.newsTicker.js"></script>
     <script src="js/animtype.js"></script>
     <script>
-      $("#anchors").find("a").smoothScroll();
       $("#testimonials").newsTicker({
         max_rows: 1,
         speed: 500,
